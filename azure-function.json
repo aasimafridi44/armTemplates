@@ -56,12 +56,6 @@
       "metadata": {
         "description": "Required for Linux app to represent runtime stack in the format of 'runtime|runtimeVersion'. For example: 'python|3.9'"
       }
-    },
-    "packageUri": {
-      "type": "string",
-      "metadata": {
-        "description": "The zip content url."
-      }
     }
   },
   "variables": {
@@ -146,7 +140,7 @@
             },
             {
               "name": "WEBSITE_RUN_FROM_PACKAGE",
-              "value": "[parameters('packageUri')]"
+              "value": "1"
             }
           ]
         }
